@@ -32,6 +32,7 @@ body {
     @apply bg-primaryColor py-[15px] px-[35px] rounded-[50px] text-white font-[600] mt-[38px];
   }
 
+  
   .heading{
     @apply text-[44px] leading-[54px] font-[700] text-headingColor;
   }
@@ -39,7 +40,13 @@ body {
   .text_para{
     @apply text-[18px] leading-[30px] font-[400] text-textColor mt-[18px];
   }
+
+  .header{
+    @apply bg-[url("./assets/images/mask.png")] bg-no-repeat bg-center bg-cover w-full h-[100px] leading-[100px];
+  }
+  
 }
+
 
 
 @media only screen and(max-width:1024px){

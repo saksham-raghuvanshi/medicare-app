@@ -2,6 +2,7 @@ import logo from "../../src/assets/images/logo.png";
 import userImg from "../assets/images/avatar-icon.png";
 import { Link, NavLink } from "react-router-dom";
 import { BiMenu } from "react-icons/bi";
+import { useRef } from "react";
 const navLinks = [
   {
     path: "/home",
@@ -22,17 +23,22 @@ const navLinks = [
 ];
 
 const Header = () => {
+  const menuRef = useRef();
+
+  const togglemenu = () => menuRef.current.classList.toggle("shown__menu");
   return (
     <header className="header">
       <div className="container">
         <div className="flex items-center justify-between">
           {/*  Logo  */}
           <div>
-            <img src={logo} alt="Logo" />
+            <Link to="/">
+              <img src={logo} alt="Logo" />
+            </Link>
           </div>
 
           {/* Menu */}
-          <div className="navigation">
+          <div className="navigation " onClick={togglemenu} ref={menuRef}>
             <ul className="menu flex item-center gap-[2.7rem]">
               {navLinks.map((item, index) => (
                 <li key={index}>
@@ -52,7 +58,7 @@ const Header = () => {
           </div>
 
           <div className="flex items-center gap-4">
-            <div>
+            <div className="hidden">
               <Link to="/">
                 <figure className="w-35px h-35px rounded-full">
                   <img src={userImg} alt="user" />
@@ -64,7 +70,7 @@ const Header = () => {
                 Login
               </button>
             </Link>
-            <span className="md:hidden">
+            <span className="md:hidden" onClick={togglemenu}>
               <BiMenu className="w-6 h-6 cursor-pointer" />
             </span>
           </div>

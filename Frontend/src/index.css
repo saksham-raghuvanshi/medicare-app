@@ -50,16 +50,18 @@ body {
 
 
 @media only screen and(max-width:1024px){
-  .container{
-    @apply w-full;
-  }
+ 
 
+ 
   section{
     @apply py-[35px];
   }
+  
 }
 
 @media only screen and(max-width:768px){
+
+
   .heading{
     @apply text-[26px] leading-[36px];
   }

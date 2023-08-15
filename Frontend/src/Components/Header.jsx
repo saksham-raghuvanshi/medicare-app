@@ -2,7 +2,7 @@ import logo from "../../src/assets/images/logo.png";
 import userImg from "../assets/images/avatar-icon.png";
 import { Link, NavLink } from "react-router-dom";
 import { BiMenu } from "react-icons/bi";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 const navLinks = [
   {
     path: "/home",
@@ -23,8 +23,26 @@ const navLinks = [
 ];
 
 const Header = () => {
-  const menuRef = useRef();
+  const headerRef = useRef(null);
+  const menuRef = useRef(null);
 
+  const handleStickyHeader = () => {
+    window.addEventListener("scroll", () => {
+      if (
+        document.body.sscrollTop > 80 ||
+        document.documentElement.scrollTop > 80
+      ) {
+        headerRef.current.classList.add("sticky__header");
+      } else {
+        headerRef.current.classList.remove("sticky__header");
+      }
+    });
+  };
+
+  useEffect(() => {
+    handleStickyHeader();
+    return () => window.removeEventListener("scroll", handleStickyHeader);
+  });
   const togglemenu = () => menuRef.current.classList.toggle("shown__menu");
   return (
     <header className="header">
@@ -38,6 +56,7 @@ const Header = () => {
           </div>
 
           {/* Menu */}
+
           <div className="navigation " onClick={togglemenu} ref={menuRef}>
             <ul className="menu flex item-center gap-[2.7rem]">
               {navLinks.map((item, index) => (

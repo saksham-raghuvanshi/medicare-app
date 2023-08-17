@@ -6,7 +6,7 @@ import icon01 from "../assets/images/icon01.png";
 import icon02 from "../assets/images/icon02.png";
 import icon03 from "../assets/images/icon03.png";
 import { BsArrowRight } from "react-icons/bs";
-import About from "./About";
+import About from "../About/About";
 
 const Home = () => {
   return (
@@ -143,7 +143,23 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* About Section */}
       <About />
+
+      {/* Services */}
+
+      <section>
+        <div className="container">
+          <div className="xl:w-[470px] mx-auto">
+            <h2 className="heading text-center">Our Medical Services</h2>
+            <p className="text_para text-center">
+              world-class care for everyone. Our healthy Sysytem offers
+              unmatched, expert health care.
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   );
 };

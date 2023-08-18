@@ -7,6 +7,7 @@ import icon02 from "../assets/images/icon02.png";
 import icon03 from "../assets/images/icon03.png";
 import { BsArrowRight } from "react-icons/bs";
 import About from "../About/About";
+import ServicesList from "../Services/ServicesList";
 
 const Home = () => {
   return (
@@ -158,6 +159,7 @@ const Home = () => {
               unmatched, expert health care.
             </p>
           </div>
+          <ServicesList />
         </div>
       </section>
     </>

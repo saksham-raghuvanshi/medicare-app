@@ -8,7 +8,8 @@ import icon03 from "../assets/images/icon03.png";
 import { BsArrowRight } from "react-icons/bs";
 import About from "../About/About";
 import ServicesList from "../Services/ServicesList";
-
+import featureImg from "../assets/images/feature-img.png";
+import videoIcon from "../assets/images/video-icon.png";
 const Home = () => {
   return (
     <>
@@ -160,6 +161,55 @@ const Home = () => {
             </p>
           </div>
           <ServicesList />
+        </div>
+      </section>
+
+      {/* Feature Content */}
+      <section>
+        <div className="container">
+          <div className="flex items-center justify-between flex-col lg:flex-row">
+            <div className="xl:w-[680px]">
+              <h2 className="heading">
+                Get Virtual Treatment <br /> anytime
+              </h2>
+              <ul className="pl-4">
+                <li className="text_para">
+                  1. Schedule the appointment directly.
+                </li>
+                <li className="text_para">
+                  2. Search for your physican here, and contact their office.
+                </li>
+                <li className="text_para">
+                  3. Veiw our physicians who are accepting new patients, use the
+                  online scheduling tool to select an appointment time.
+                </li>
+              </ul>
+              <Link to="/">
+                <button className="btn">Learn More</button>
+              </Link>
+            </div>
+
+            {/* feature img */}
+
+            <div className="relative z-10 xl:w-[770px] flex justify-end mt-[50px] lg:mt-0">
+              <img src={featureImg} className="w-3/4" alt="" />
+              <div className="w-[150px] lg:w-[248px] bg-white absolute bottom-[50px] left-0 md:bottom-[100px] md:left z-20 p-2 pb-3 lg:pt-4 lg:px-4 lg:pb-[26px] rounded-[10px]">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-[6px] lg:gap-3">
+                    <p className="text-[10px] leading-[10px] lg:text-[14px] lg:leading-5 text-headingColor font-[600]">
+                      Tue, 24
+                    </p>
+                    <p className="text-[10px] leading-[10px] lg:text-[14px] lg:leading-5 text-textColor font-[400]">
+                      10:00AM
+                    </p>
+                    <span className="w-5 h-5 bg-yellowColor rounded py-1 px-[6px] lg:py-3 lg:px-[9px] lg:w-[34px] lg:h-[34px] flex items-center justify-center ">
+                      <img src={videoIcon} alt="" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>

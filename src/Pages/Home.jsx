@@ -11,6 +11,7 @@ import ServicesList from "../Services/ServicesList";
 import featureImg from "../assets/images/feature-img.png";
 import videoIcon from "../assets/images/video-icon.png";
 import avatarIcon from "../assets/images/avatar-icon.png";
+import DoctorsList from "./Doctors/DoctorsList";
 const Home = () => {
   return (
     <>
@@ -214,12 +215,26 @@ const Home = () => {
                 <div className="flex items-center  gap-[6px] lg:gap-[10px] mt-2 lg:mt-[18px]">
                   <img src={avatarIcon} alt="" />
                   <h4 className="text-[10px] lg:text-[16px] font-[700] text-headingColor leading-3 lg:leading-[26px]">
-                    Wayne Collins{" "}
+                    Wayne Collins
                   </h4>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Doctor Section */}
+      <section>
+        <div className="container">
+          <div className="xl:w-[470px] mx-auto">
+            <h2 className="heading text-center">Our Great Doctors</h2>
+            <p className="text_para text-center">
+              World-class care for everyone. Our health System offers unmatched,
+              expert health care.
+            </p>
+          </div>
+          <DoctorsList />
         </div>
       </section>
     </>

@@ -1,9 +1,12 @@
+/* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 import starIcon from "../../assets/images/Star.png";
 import { BsArrowRight } from "react-icons/bs";
+// eslint-disable-next-line react/prop-types
 const DoctorCard = ({ doctor }) => {
   const {
     name,
+
     specialty,
     avgRating,
     totalRating,

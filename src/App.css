@@ -1,3 +1,24 @@
 .home{
     min-height: 100vh;
 }
+
+.swiper-pagination-bullet {
+    width: 12px !important;
+    height: 12px !important;
+    border: 1px solid #181a1e !important;
+    opacity: 100% !important;
+    background:  #fff !important;
+
+}
+
+.swiper-pagination-bullet-active{
+    background:  #0067ff !important;
+    border: none !important;
+}
+.swiper{
+    padding-bottom: 70px !important;
+}
+.swiper-slide.swiper-slide-next{
+    border-radius: 12px;
+    box-shadow: 0px 20px 70px rgba(0,103,255,0.3) !important;
+}

@@ -14,6 +14,7 @@ import avatarIcon from "../assets/images/avatar-icon.png";
 import faqImg from "../assets/images/faq-img.png";
 import DoctorsList from "./Doctors/DoctorsList";
 import FaqItem from "./Faq/FaqItem";
+import Testimonial from "../Components/Testimonial/Testimonial";
 const Home = () => {
   return (
     <>
@@ -253,6 +254,19 @@ const Home = () => {
               <FaqItem />
             </div>
           </div>
+        </div>
+      </section>
+      <section>
+        <div className="container">
+          <div>
+            <h2 className="heading text-center">What our patient say</h2>
+            <p className="text_para text-center">
+              World-class care for everyone. Our health System offers <br />{" "}
+              unmatched, expect health care
+            </p>
+          </div>
+
+          <Testimonial />
         </div>
       </section>
     </>

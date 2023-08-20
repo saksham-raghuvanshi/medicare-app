@@ -13,6 +13,7 @@ import videoIcon from "../assets/images/video-icon.png";
 import avatarIcon from "../assets/images/avatar-icon.png";
 import faqImg from "../assets/images/faq-img.png";
 import DoctorsList from "./Doctors/DoctorsList";
+import FaqItem from "./Faq/FaqItem";
 const Home = () => {
   return (
     <>
@@ -243,9 +244,13 @@ const Home = () => {
 
       <section>
         <div className="container">
-          <div className="fle justify-between gap-[50px] lg:gap-0">
+          <div className="flex justify-between gap-[50px] lg:gap-0">
             <div className="w-1/2 hidden md:block">
               <img src={faqImg} alt="" />
+            </div>
+            <div className="w-full md:w-1/2">
+              <h2 className="heading">Most Question by our beloved patients</h2>
+              <FaqItem />
             </div>
           </div>
         </div>

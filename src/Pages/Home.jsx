@@ -15,7 +15,9 @@ import faqImg from "../assets/images/faq-img.png";
 import DoctorsList from "./Doctors/DoctorsList";
 import FaqItem from "./Faq/FaqItem";
 import Testimonial from "../Components/Testimonial/Testimonial";
+import useTitle from "../Hooks/useTitle";
 const Home = () => {
+  useTitle("Home");
   return (
     <>
       <section className="hero__section pt-[60px] 2xl:h-[800px]">

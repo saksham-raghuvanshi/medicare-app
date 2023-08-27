@@ -1,7 +1,10 @@
 import { services } from "../../data/services.js";
+import useTitle from "../Hooks/useTitle.js";
 import ServicesCard from "../Services/ServicesCard.jsx";
 
 const Services = () => {
+  useTitle("Services");
+
   return (
     <>
       <section className="bg-[#fff9ea]">

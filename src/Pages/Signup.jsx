@@ -24,7 +24,6 @@ const Signup = () => {
                   type="text"
                   placeholder="Full Name"
                   name="name"
-                  value=""
                   className="w-full py-4 border-b border-solid  border-[#006ff61] focus:outline-none focus:border-b-primaryColor text-[22px] leading-7 text-headingColor placeholder:text-textColor rounded-md cursor-pointer"
                   required
                 />
@@ -34,7 +33,6 @@ const Signup = () => {
                   type="email"
                   placeholder="Enter Your Email"
                   name="password"
-                  value=""
                   className="w-full py-4 border-b border-solid  border-[#006ff61] focus:outline-none focus:border-b-primaryColor text-[22px] leading-7 text-headingColor placeholder:text-textColor rounded-md cursor-pointer"
                   required
                 />
@@ -44,7 +42,6 @@ const Signup = () => {
                   type="password"
                   placeholder="Password"
                   name="password"
-                  value=""
                   className="w-full py-4 border-b border-solid  border-[#006ff61] focus:outline-none focus:border-b-primaryColor text-[22px] leading-7 text-headingColor placeholder:text-textColor rounded-md cursor-pointer"
                   required
                 />

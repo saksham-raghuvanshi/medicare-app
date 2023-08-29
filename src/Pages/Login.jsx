@@ -47,14 +47,13 @@ const Login = () => {
               Login
             </button>
           </div>
-
-          <p className="mt-5 text-textColor text-center">
-            Don&apos;t have an account{" "}
-            <Link to="/signup" className="text-primaryColor font-medium ">
-              Register
-            </Link>
-          </p>
         </form>
+        <p className="mt-5 text-textColor text-center">
+          Don&apos;t have an account{" "}
+          <Link to="/signup" className="text-primaryColor font-medium ">
+            Register
+          </Link>
+        </p>
       </div>
     </section>
   );

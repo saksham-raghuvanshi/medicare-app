@@ -140,14 +140,13 @@ const Signup = () => {
                   Signup
                 </button>
               </div>
-
-              <p className="mt-5 text-textColor text-center">
-                Already have an account?
-                <Link to="/login" className="text-primaryColor font-medium ">
-                  Login
-                </Link>
-              </p>
             </form>
+            <p className="mt-5 text-textColor text-center">
+              Already have an account?
+              <Link to="/login" className="text-primaryColor font-medium ">
+                Login
+              </Link>
+            </p>
           </div>
         </div>
       </div>

@@ -12,6 +12,8 @@ export const doctors = [
     photo: doctorImg01,
     totalPatients: 500,
     hospital: "Kangaroo Hospital.",
+    short:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, alias!",
   },
   {
     id: "02",
@@ -22,6 +24,8 @@ export const doctors = [
     photo: doctorImg02,
     totalPatients: 1500,
     hospital: "Flex Hospital",
+    short:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, alias!",
   },
   {
     id: "03",
@@ -32,5 +36,7 @@ export const doctors = [
     photo: doctorImg03,
     totalPatients: 1000,
     hospital: "Flex Hospital",
+    short:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, alias!",
   },
 ];

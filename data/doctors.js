@@ -11,6 +11,8 @@ export const doctors = [
     totalRating: 272,
     photo: doctorImg01,
     totalPatients: 500,
+    date: "23 June, 2008",
+    education: "PHD in Surgeon",
     hospital: "Kangaroo Hospital.",
     short:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, alias!",
@@ -22,8 +24,10 @@ export const doctors = [
     avgRating: 4.8,
     totalRating: 272,
     photo: doctorImg02,
+    date: "23 June, 2008",
     totalPatients: 1500,
     hospital: "Flex Hospital",
+    education: "PHD in Neurologist",
     short:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, alias!",
   },
@@ -35,6 +39,8 @@ export const doctors = [
     totalRating: 272,
     photo: doctorImg03,
     totalPatients: 1000,
+    date: "23 June, 2008",
+    education: "PHD in Gynaecology",
     hospital: "Flex Hospital",
     short:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, alias!",

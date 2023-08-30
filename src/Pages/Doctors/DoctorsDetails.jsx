@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { doctors } from "../../../data/doctors.js";
 import starIcon from "../../assets/images/Star.png";
+import DoctorAbout from "./DoctorAbout.jsx";
+import Feedback from "./Feedback.jsx";
 
 const DoctorsDetails = () => {
   const { id } = useParams();
@@ -80,7 +82,11 @@ const DoctorsDetails = () => {
                 Feedback
               </button>
             </div>
-            <div className="mt-[50px]"></div>
+            <div className="mt-[50px]">
+              {tab === "about" && <DoctorAbout doctor={doctor} />}
+
+              {tab === "feedback" && <Feedback />}
+            </div>
           </div>
         </div>
       </div>

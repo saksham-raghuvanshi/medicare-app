@@ -4,6 +4,7 @@ import { doctors } from "../../../data/doctors.js";
 import starIcon from "../../assets/images/Star.png";
 import DoctorAbout from "./DoctorAbout.jsx";
 import Feedback from "./Feedback.jsx";
+import SidePanel from "./SidePanel.jsx";
 
 const DoctorsDetails = () => {
   const { id } = useParams();
@@ -88,6 +89,7 @@ const DoctorsDetails = () => {
               {tab === "feedback" && <Feedback doctor={doctor} />}
             </div>
           </div>
+          <SidePanel />
         </div>
       </div>
     </section>
